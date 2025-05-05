@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>lab3Finals</title>
+    <script type="text/javascript">
+function getResult()
+{
+    var number = document.getElementById("num").value;
+    var num2 = number;
+    var num3 = number * 100000;
+    document.getElementById ("result").innerHTML=num2 + " KILOMETER IS " + num3 + " cm"; 
+}
+    </script>
+    <style>
+        body
+        {
+            flex: auto;
+            font-weight: bold;
+        }
+        .box
+        {
+            width: 270px;
+            padding: 30px;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="file:///C:/Users/Acosta_T/Desktop/New%20folder/HUMCOM%20finals%20experimental/index.html#projects" target="_self"><button>RETURN</button></a>
+    <div class="box">
+        <div class="box"><input type="text" id="num"><button onclick="getResult(num);">submit</button></div>
+        <div id = "result"></div>
+    </div>
+    <br>
+    <br>
+    
+
+</body>
+</html>

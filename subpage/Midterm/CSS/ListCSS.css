@@ -1,0 +1,31 @@
+.square
+{
+    font-style: italic;
+    list-style-type: square;
+    color: green;
+}
+.circle
+{
+    list-style-type: circle;
+    color: blue;
+}
+.number
+{
+    list-style: 1;
+    color: darkorange;
+}
+.square1
+{
+    list-style-type: square;
+    color: brown;
+}
+.circle1
+{
+    list-style-type: circle;
+    color: teal;
+}
+.number1
+{
+    list-style: 1;
+    color: gold;
+}

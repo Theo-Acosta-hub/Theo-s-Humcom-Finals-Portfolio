@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>lab2Finals</title>
+    <script type="text/javascript">
+function getResult()
+{
+    var result1 = parseFloat(document.getElementById("num"))
+    var result2 = parseFloat(document.getElementById("num"))
+    var num1 = document.getElementById("num").value;
+    if(num1%2 == 0)
+    {
+        document.getElementById("result").innerHTML="the number is EVEN";
+    }
+    else
+    {
+        document.getElementById("result").innerHTML=" the number ODD";
+    }
+
+    var i;
+    var count = 0;
+    
+    if(num1 <= 1)
+    {
+        document.getElementById("result2").innerHTML="the number INVALID";
+    }
+    else
+    {
+        for(i = 0;i<=num1;i++)
+        {
+            if (num1%i==0)
+            {
+                count++;
+            }
+        }
+        
+        if(count<=2)
+        {
+            document.getElementById("result2").innerHTML="the number is PRIME";
+        }
+        else
+        {
+            document.getElementById("result2").innerHTML="the number is COMPOSITE";
+        }
+
+
+    }
+
+
+
+}
+    </script>
+    <style>
+        .body
+        {
+            flex: auto;
+        }
+        .box
+        {
+            width: 200px;
+            height: 40px;
+            border: 2px;
+            margin: auto;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <a href="file:///C:/Users/Acosta_T/Desktop/New%20folder/HUMCOM%20finals%20experimental/index.html#projects" target="_self"><button>RETURN</button></a>
+    <div class="box"><input type="text" id="num"><button onclick="getResult(num);">submit</button></div>
+    <h2></h2>
+        <br>
+        <br>
+        <div id = "result"></div>
+        <div id = "result2"></div>
+
+</body>
+</html>
